@@ -15,8 +15,8 @@ spec:
         app: prometheus
     spec:
       serviceAccountName: prometheus
-      nodeSelector:
-        monitor: prometheus
+#      nodeSelector:
+#        monitor: prometheus
       containers:
       - image: prom/prometheus:v2.14.0
         name: prometheus
